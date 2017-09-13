@@ -3,20 +3,27 @@ import numpy as np
 
 # N is batch size; D_in is input dimension;
 # H is hidden dimension; D_out is output dimension.
+# 网络层次 1000*100*10
 N, D_in, H, D_out = 64, 1000, 100, 10
 
 # Create random input and output data
+# 64 * 1000
 x = np.random.randn(N, D_in)
+# 64 * 10
 y = np.random.randn(N, D_out)
 
 # Randomly initialize weights
+# 1000 * 100 输入层=>隐藏层
 w1 = np.random.randn(D_in, H)
+# 100 * 10 隐藏层=>输出层
 w2 = np.random.randn(H, D_out)
 
 learning_rate = 1e-6
 for t in range(500):
   # Forward pass: compute predicted y
+  # 激活量
   h = x.dot(w1)
+  # 没有bais
   h_relu = np.maximum(h, 0)
   y_pred = h_relu.dot(w2)
   
