@@ -30,6 +30,8 @@ for t in range(500):
     # override the __call__ operator so you can call them like functions. When
     # doing so you pass a Variable of input data to the Module and it produces
     # a Variable of output data.
+    # 64 * 1000
+    print(x.data.shape)
     y_pred = model(x)
 
     # Compute and print loss. We pass Variables containing the predicted and true
@@ -49,7 +51,5 @@ for t in range(500):
 
     # Update the weights using gradient descent. Each parameter is a Variable, so
     # we can access its data and gradients like we did before.
-    print("============================")
     for param in model.parameters():
-        print(param)
         param.data -= learning_rate * param.grad.data
