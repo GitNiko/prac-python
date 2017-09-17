@@ -148,3 +148,137 @@ criterion = nn.CrossEntropyLoss()
 optimizer_ft = optim.SGD(model_ft.parameters(), lr=0.001, momentum=0.9)
 
 model_ft = train_model(model_ft, criterion, optimizer_ft, exp_lr_scheduler, num_epochs=25)
+
+
+
+Epoch 0/24
+----------
+LR is set to 0.001
+train Loss: 0.1361 Acc: 0.7377
+val Loss: 0.0423 Acc: 0.9281
+
+Epoch 1/24
+----------
+train Loss: 0.1258 Acc: 0.7541
+val Loss: 0.0557 Acc: 0.9150
+
+Epoch 2/24
+----------
+train Loss: 0.1117 Acc: 0.8156
+val Loss: 0.0946 Acc: 0.8562
+
+Epoch 3/24
+----------
+train Loss: 0.1204 Acc: 0.8279
+val Loss: 0.0732 Acc: 0.8954
+
+Epoch 4/24
+----------
+train Loss: 0.1108 Acc: 0.8361
+val Loss: 0.0832 Acc: 0.8693
+
+Epoch 5/24
+----------
+train Loss: 0.1073 Acc: 0.8238
+val Loss: 0.0762 Acc: 0.8824
+
+Epoch 6/24
+----------
+train Loss: 0.1423 Acc: 0.7869
+val Loss: 0.0532 Acc: 0.9346
+
+Epoch 7/24
+----------
+LR is set to 0.0001
+train Loss: 0.0955 Acc: 0.8320
+val Loss: 0.0615 Acc: 0.9346
+
+Epoch 8/24
+----------
+train Loss: 0.0682 Acc: 0.8689
+val Loss: 0.0518 Acc: 0.9412
+
+Epoch 9/24
+----------
+train Loss: 0.0705 Acc: 0.8770
+val Loss: 0.0567 Acc: 0.9281
+
+Epoch 10/24
+----------
+train Loss: 0.0685 Acc: 0.8852
+val Loss: 0.0561 Acc: 0.9216
+
+Epoch 11/24
+----------
+train Loss: 0.0722 Acc: 0.8852
+val Loss: 0.0482 Acc: 0.9477
+
+Epoch 12/24
+----------
+train Loss: 0.0907 Acc: 0.8115
+val Loss: 0.0533 Acc: 0.9281
+
+Epoch 13/24
+----------
+train Loss: 0.0788 Acc: 0.8566
+val Loss: 0.0640 Acc: 0.9412
+
+Epoch 14/24
+----------
+LR is set to 1.0000000000000003e-05
+train Loss: 0.0753 Acc: 0.8852
+val Loss: 0.0513 Acc: 0.9412
+
+Epoch 15/24
+----------
+train Loss: 0.0763 Acc: 0.8566
+val Loss: 0.0509 Acc: 0.9477
+
+Epoch 16/24
+----------
+train Loss: 0.0613 Acc: 0.8975
+val Loss: 0.0536 Acc: 0.9412
+
+Epoch 17/24
+----------
+train Loss: 0.0636 Acc: 0.8811
+val Loss: 0.0495 Acc: 0.9477
+
+Epoch 18/24
+----------
+train Loss: 0.0807 Acc: 0.8484
+val Loss: 0.0484 Acc: 0.9477
+
+Epoch 19/24
+----------
+train Loss: 0.0584 Acc: 0.9016
+val Loss: 0.0523 Acc: 0.9281
+
+Epoch 20/24
+----------
+train Loss: 0.0808 Acc: 0.8525
+val Loss: 0.0595 Acc: 0.9020
+
+Epoch 21/24
+----------
+LR is set to 1.0000000000000002e-06
+train Loss: 0.0672 Acc: 0.8893
+val Loss: 0.0536 Acc: 0.9346
+
+Epoch 22/24
+----------
+train Loss: 0.0806 Acc: 0.8648
+val Loss: 0.0553 Acc: 0.9085
+
+Epoch 23/24
+----------
+train Loss: 0.0633 Acc: 0.9057
+val Loss: 0.0548 Acc: 0.9216
+
+Epoch 24/24
+----------
+train Loss: 0.0557 Acc: 0.9016
+val Loss: 0.0616 Acc: 0.9150
+
+Training complete in 29m 14s
+Best val Acc: 0.947712
