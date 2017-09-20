@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 img1 = cv2.imread('./images/zidane.jpg')
 img2 = cv2.imread('./images/logo.png')
-# rows, cols, channels = img2.shape
+# rows, cols, channels = img2.shape 
 # img1 = img1[0:rows, 0:cols]
 
 # img1 = cv2.addWeighted(img1, 0.7, img2, 0.3, 0)
