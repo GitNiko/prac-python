@@ -4,3 +4,4 @@ __pycache__/
 *.gz
 hymenoptera_data/
 faces/
+.DS_Store
