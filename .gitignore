@@ -5,3 +5,4 @@ __pycache__/
 hymenoptera_data/
 faces/
 .DS_Store
+data/
