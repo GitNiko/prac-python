@@ -14,12 +14,20 @@ cy = int(M['m01']/M['m00'])
 epsilon = cv2.arcLength(cnt, True)
 approx = cv2.approxPolyDP(cnt,epsilon,True)
 hull = cv2.convexHull(cnt)
-print(hull)
 x,y,w,h = cv2.boundingRect(cnt)
 
 rect = cv2.minAreaRect(cnt)
 box = cv2.boxPoints(rect)
 box = np.int0(box)
+
+## calc the contour properties
+area = cv2.contourArea(cnt)
+hull_area = cv2.contourArea(hull)
+print('aspect ratio: {}'.format(float(w)/h))
+print('extend: {}'.format(float(area)/w * h))
+print('solidity: {}'.format(float(area)/hull_area))
+print('equivalent: {}'.format(np.sqrt(4 * area / np.pi)))
+print('orientation: {}'.format(cv2.fitEllipse(cnt)))
 
 cv2.rectangle(orgImg, (x, y), (x + w, y + h), (0, 255, 0), 1)
 cv2.drawContours(orgImg, [box], -1, (0,255,0), 1)
